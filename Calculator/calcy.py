@@ -13,8 +13,8 @@ def divide(a,b):
     return a/b
 
 def main():
-    print("This is the Python Calculator. \n")
-
+    print("This is the Python Calculator. ")
+    print("Let's Do some Basic Maths...")
     while True:
         
         print("Select the operation. ")
