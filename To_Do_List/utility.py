@@ -7,3 +7,4 @@ def validate_task_number():
             return task_number
         except ValueError:
             print("Invalid input. Please enter a valid task number.")
+

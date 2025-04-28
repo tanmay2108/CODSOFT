@@ -15,7 +15,7 @@ def view_all_tasks():
             print(f"{idx + 1}. {task['task']} - {status}")
         print()
 
-def is_completed(task_number):
+def update(task_number):
     try:
         task = tasks[task_number - 1]
         task["done"] = True
@@ -27,5 +27,12 @@ def delete_task(task_number):
     try:
         task = tasks.pop(task_number - 1)
         print(f"Task '{task['task']}' deleted!\n")
+    except IndexError:
+        print("Invalid task number.\n")
+
+def edit_task(task_number, new_task):
+    try:
+        tasks[task_number - 1]['task'] = new_task
+        print("Task updated successfully!\n")
     except IndexError:
         print("Invalid task number.\n")
