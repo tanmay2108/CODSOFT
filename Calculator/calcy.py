@@ -35,11 +35,11 @@ def main():
 
         if choice == '1':
             print(f"Result after addtion: {add(num1,num2)}")
-        if choice == '2':
+        elif choice == '2':
             print(f"Result after subtraction: {sub(num1,num2)}")
-        if choice == '3':
+        elif choice == '3':
             print(f"Result after multiplying: {multiply(num1,num2)}")
-        if choice == '4':
+        elif choice == '4':
             print(f"Result after division: {divide(num1,num2)}")
         elif choice == '5':
             print("Exit Operation...Goodbye")
