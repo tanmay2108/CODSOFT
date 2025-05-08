@@ -11,7 +11,7 @@ def main():
     length=int(input("Length of the password= "))
     if length>0:
         password=new_password(length)
-        print(f"The new Generated password is {password}")
+        print(f"The new Generated password is ({password})")
     else:
         print("Enter a valid Length")
     
